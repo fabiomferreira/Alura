@@ -5,5 +5,12 @@ var campos = [
 ];
 
 document.querySelector('.form').addEventListener('submit', function(event){
-    alert('oi');
+    var tr = document.querySelector('tr');
+    campos.forEach(function(campo){
+        var td = document.querySelector('td');
+        td.textContent = campo.value;
+        tr.appendChild(td); 
+
+        var tdVolume = document.createElement('td');
+    })
 });
